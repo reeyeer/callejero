@@ -1,0 +1,22 @@
+server:
+  port: 3020
+  base-url: /callejero
+db:
+  description: base de prueba
+  host: localhost
+  port: 5432
+  database: callejero_db
+  schema: callejero
+  user: callejero_admin
+  password: cambiar_esta_clave
+install:
+  dump:
+    db:
+      owner: callejero_owner
+client-setup: 
+  lang: es
+devel:
+  delay: 0
+log:
+  db:
+    on-demand: true
